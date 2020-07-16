@@ -1,0 +1,179 @@
+.mainPage{
+    width: 100vw;
+    height: 100vh;
+}
+.menu{
+    width: 100%;
+    height: 75px;
+    background-color: #FEB033;
+    display: flex;
+}
+.container{
+    width: 100%;
+    height: calc(100% - 75px);
+    background-image: url('../images/to-do-4483048_1920.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.aside-left{
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+}
+.aside-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+    height: 100%;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    
+}
+.logo{
+    border-radius: 30px;
+}
+.list-review{
+    color: white;
+    font-size: 20px;
+}
+.aside-right >div{
+    /* background-color: red; */
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: white;
+    font-size: 20px;
+    
+}
+#search{
+    width: 170px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.btn-search{
+    width: 150px;
+    height: 40%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 2px;
+    /* background-color: white; */
+}
+.avt{
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+.avt-img{
+    border-radius: 30px;
+ 
+}
+.container >div{
+    width: 300px;
+    height: 400px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.subject{
+    width: 100px;
+    height: 40px;
+    background-color: #284664;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+}
+.des-block{
+    width: 100%;
+    height: calc(100% - 40px);
+    border: 2px solid #284664;
+    background-color: white;
+    border-radius: 5px;
+}
+.description{
+    width: 100%;
+    height: 150px;
+    font-size: 17px;
+    background-image: url('../images/127434625-online-test-concept-quiz-on-the-computer-education-and-learning-with-digital-device-isolated-vector-.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 300px 150px;
+    border-bottom: 2px solid #284664;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.des-txt{
+    width: 70%;
+    height: 70%;
+    background-color:#284664 ;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+}
+.detail-block{
+    width: 100%;
+    height:calc(100% - 160px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.details{
+    width: 90%;
+    height: 90%;
+    font-size: 20px;
+    border: 2px solid #284664;
+}
+.time{
+    margin-left: 10px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+.amount{
+    width: 100%;
+    height: 40px;
+    margin-left: 10px;
+    line-height: 40px;
+}
+.creatAt{
+    width: 100%;
+    height: 40px;
+    margin-left: 10px;
+    line-height: 40px;
+    
+}
+.join{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+#btn-join{
+    width: 75px;
+    height: 30px;
+    background-color: #F9B169;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
