@@ -1,8 +1,19 @@
 *{
     padding: 0;
     margin: 0;
+    /* overflow-y: hidden;
+    overflow-x: hidden; */
 }
 body{
     width: 100vw;
     height: 100vh;
+    /* background-image: url('../images/to-do-4483048_1920.jpg');
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-color: #BDF8F4;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+      overflow-y: auto;
+    overflow-x: hidden;
+
 }

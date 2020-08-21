@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f69268e783.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/signIn.css">
+    <link rel="stylesheet" href="./css/signUp.css">
+    <link rel="stylesheet" href="./css/mainPage.css">
+    <link rel="stylesheet" href="./css/test.css">
+    <link rel="stylesheet" href="./testTmp.css">
+    <link rel="stylesheet" href="./createTest.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDB4M9RMLsOIccYSx8sd2ZjlfBANIXoxm8",
+            authDomain: "cimx-e5e5b.firebaseapp.com",
+            databaseURL: "https://cimx-e5e5b.firebaseio.com",
+            projectId: "cimx-e5e5b",
+            storageBucket: "cimx-e5e5b.appspot.com",
+            messagingSenderId: "852573027381",
+            appId: "1:852573027381:web:a6d7a2d6954e33bfa5857c",
+            measurementId: "G-TNVGC9JMFS"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        // firebase.analytics();
+    </script>
+</head>
+
+<body>
+    <section>
+        <div class="test">
+            <div class="menu">
+                <div class="aside-left">
+                    <div class="logo">
+                        <img class="logo"
+                            src="./images/168-1683771_transparent-quiz-clipart-images-quiz-night-hd-png.png" alt="img"
+                            style="width:50px;height:50px">
+                    </div>
+                    <div class="list-review">Exam Library</div>
+                </div>
+                <div class="aside-right">
+                    <div class="contact">
+                        <i class="fas fa-phone-volume fa-2x" style="margin-right: 5px;"></i>
+                        Contact us
+                    </div>
+                    <div class="search-test">
+                        <form id="search">
+                            <i class="fas fa-search fa-1x"></i>
+                            <input type="text" class="btn-search" placeholder="Search">
+                    </div>
+                    </form>
+
+                    <div class="account">
+                        <div class="avt">
+                            <img src="./images/avt-girl.jpg" alt="img" style="width:50px; height:50px" class="avt-img">
+                        </div>
+                        <div class="user-name">Nga Trịnh</div>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <section class="content">
+                    <div class="aside-left-content">
+                        <div class="today">
+                            <i class="far fa-calendar-alt"></i>
+                            <h1>Today</h1>
+                        </div>
+                    </div>
+                    <div class="todo-list">
+                        <h1 class="list-title">Today</h1>
+                        <div class="due">
+                            <div class="due-list">
+                                <h2 class="overdue">Test 1</h2>
+                                <ul class="list">
+                                    <div class="due-content" id="due-content-0">
+                                        <div class="due-item">
+                                            <!-- <button class="btn-primary" id="btn-primary-0"></button> -->
+                                            <div class="due01">Question 1: Được dịch từ tiếng Anh-Trong xuất bản và
+                                                thiết kế đồ họa, Được dịch từ tiếng
+                                                Anh-Trong xuất bản và thiết kế đồ họa, Được dịch từ tiếng Anh-Trong xuất
+                                                bản và thiết kế đồ họa, Được dịch từ tiếng
+                                                Anh-Trong xuất bản và thiết kế đồ họa,</div><br>
+                                        </div>
+                                        <div class="view-question">
+                                            <span class="answer-A">A</span>
+                                            Được dịch từ tiếng Anh-Trong xuất bản và thiết kế đồ họa, Được dịch từ tiếng
+                                            Anh-Trong xuất bản và thiết kế đồ họa,
+                                        </div>
+                                        <div class="view-question">
+                                            <span class="answer-A">A</span>
+                                            Được dịch từ tiếng Anh-Trong xuất bản và thiết kế đồ họa, Được dịch từ tiếng
+                                            Anh-Trong xuất bản và thiết kế đồ họa,
+                                        </div>
+                                        <div class="view-question">
+                                            <span class="answer-A">A</span>
+                                            Được dịch từ tiếng Anh-Trong xuất bản và thiết kế đồ họa, Được dịch từ tiếng
+                                            Anh-Trong xuất bản và thiết kế đồ họa,
+                                        </div>
+                                        <div class="view-question">
+                                            <span class="answer-A">A</span>
+                                            Được dịch từ tiếng Anh-Trong xuất bản và thiết kế đồ họa, Được dịch từ tiếng
+                                            Anh-Trong xuất bản và thiết kế đồ họa,
+                                        </div>
+                                    </div>
+                                    <div class="due-content">
+                                        <div class="due-item">
+                                            <!-- <button class="btn-primary" onclick="dueFinish()"></button> -->
+                                            <div class="due01">Test 2</div><br>
+                                        </div>
+                                        <div class="date">Date</div>
+                                    </div>
+                                    <div class="due-content">
+                                        <div class="due-item">
+                                            <!-- <button class="btn-primary"></button> -->
+                                            <div class="due01">Test 3</div><br>
+                                        </div>
+                                        <div class="date">Date</div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="add-block">
+                            <div class="back" onclick="loadData()">
+                                Back
+                            </div>
+                            <div class="add-due" onclick="openForm()">
+                                Add Test
+                            </div>
+                            <div class="add-due" onclick="openForm()">
+                                Add question
+                            </div>
+                            <div class="trans-choice">
+                                <div class="add-due" onclick="openForm()">
+                                    View all question
+                                </div>
+                                <div class="choice">
+
+                                    <div class="add-due" onclick="openForm()">
+                                        Math
+                                    </div>
+                                    <div class="add-due" onclick="openForm()">
+                                        English
+                                    </div>
+                                    <div class="add-due" onclick="openForm()">
+                                        Database
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="add-task-block">
+                            <form class="add-task" id="add-task">
+                                <div class="task-block">
+
+                                    <textarea name="task" id="task" cols="30" rows="10"
+                                        placeholder="Input test title"></textarea>
+                                    <textarea name="task" id="task" cols="30" rows="10"
+                                        placeholder="Input test brief description"></textarea>
+                                    <div class="add-block">
+                                        <div class="back" onclick="loadData()">
+                                            Back
+                                        </div>
+                                        <div class="add-due" onclick="openForm()">
+                                            Choose questions
+                                        </div>
+                                        <div class="add-due" onclick="openForm()">
+                                            Add questions
+                                        </div>
+                                    </div>
+                                    <!-- <textarea name="task" id="task" cols="30" rows="10" -->
+                                    <label>Chọn ngày: </label>
+                                    <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
+                                        <input class="form-control" readonly="" type="text" name="date">
+                                        <span class="input-group-addon">
+                                            <i class="glyphicon glyphicon-calendar"></i>
+                                        </span>
+
+                                    </div>
+                                </div>
+                                <!-- <button class="add">Add Task</button> -->
+                                <button class="cancel" onclick="closeForm()">Cancel</button>
+                            </form>
+                        </div>
+                        <div class="subject-list">
+                            <div class="subject-block">
+
+                                <button class="btn-choose"></button>
+                                <div class="subject01">Math</div><br>
+                            </div>
+                            <div class="subject-block">
+                                <button class="btn-choose"></button>
+                                <div class="subject01">English</div><br>
+                            </div>
+                            <div class="subject-block">
+
+                                <button class="btn-choose"></button>
+                                <div class="subject01">Database</div><br>
+                            </div>
+                        </div>
+                        <input type="radio" id="male" name="gender" value="Math">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="English">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="other" name="gender" value="Database">
+                        <label for="other">Other</label>
+                    </div>
+                </section>
+            </section>
+
+        </div>
+    </section>
+    <script src="./js/countdownTimer.js"></script>
+    <script src="./js/loadTest.js"></script>
+    <script>
+        countdown.onload();
+    </script>
+</body>
+
+</html>

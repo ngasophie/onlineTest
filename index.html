@@ -5,13 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/f69268e783.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/signIn.css">
+    <link rel="stylesheet" href="./css/signUp.css">
+
+    <link rel="stylesheet" href="./css/mainPage.css">
+
+    <link rel="stylesheet" href="./css/test.css">
+    <link rel="stylesheet" href="./css/trans.css">
+    <link rel="stylesheet" href="./css/createTest.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDB4M9RMLsOIccYSx8sd2ZjlfBANIXoxm8",
+            authDomain: "cimx-e5e5b.firebaseapp.com",
+            databaseURL: "https://cimx-e5e5b.firebaseio.com",
+            projectId: "cimx-e5e5b",
+            storageBucket: "cimx-e5e5b.appspot.com",
+            messagingSenderId: "852573027381",
+            appId: "1:852573027381:web:a6d7a2d6954e33bfa5857c",
+            measurementId: "G-TNVGC9JMFS"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+         // firebase.analytics();
+    </script>
 </head>
 
 <body>
-    <article>
-        <section>
+    <article id="screen">
+        <!-- <section>
             <div class="signIn">
                 <div class="signIn-content">
                     <form id="form-signIn">
@@ -43,8 +78,31 @@
                     <div class="back-ground"></div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </article>
+    <script src="./js/view.js"></script>
+    <script src="./js/countdownTimer.js"></script>
+    <script src="./js/loadTest.js"></script>
+    <script src="./js/signUpHandler.js"></script>
+    <script src="./js/controller.js"></script>
+    <script src="./js/trans.js"></script>
+    <script src="./js/createTest.js"></script>
+    <script src="./js/loadQues.js"></script>
+    <script src="./js/addQues.js"></script>
+    <!-- <script>
+        thử tạo 1 doc có id tự đặt=))
+        nếu autoId thì sẽ là dùng add
+        console.log('thử thôi');
+        async function abc(){
+
+           let thu =  await firebase.firestore().collection('conversations').doc('1234567899')
+           thu.set({
+                name: "Nga",
+                date:"2020"
+            })
+        }
+        abc();
+    </script> -->
 </body>
 
 </html>

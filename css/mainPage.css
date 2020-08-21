@@ -11,16 +11,17 @@
 .container{
     width: 100%;
     height: calc(100% - 75px);
-    background-image: url('../images/to-do-4483048_1920.jpg');
+    margin-top: 10px;
+    /* background-image: url('../images/to-do-4483048_1920.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: 100% 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 
 }
 .aside-left{
@@ -48,9 +49,15 @@
 .logo{
     border-radius: 30px;
 }
+.logo:hover{
+    cursor: pointer;
+}
 .list-review{
     color: white;
     font-size: 20px;
+}
+.list-review:hover{
+    cursor: pointer;
 }
 .aside-right >div{
     /* background-color: red; */
@@ -92,6 +99,7 @@
     height: 400px;
     margin-left: 50px;
     margin-right: 50px;
+    margin-top: 20px;
 }
 .subject{
     width: 100px;
@@ -101,6 +109,9 @@
     text-align: center;
     line-height: 50px;
     border-radius: 5px;
+}
+.user-name{
+    cursor: pointer;
 }
 .des-block{
     width: 100%;
@@ -169,11 +180,13 @@
     display: flex;
     justify-content: center;
 }
-#btn-join{
+.btn-join{
     width: 75px;
     height: 30px;
     background-color: #F9B169;
     border: none;
     outline: none;
     border-radius: 5px;
+    cursor: pointer;
 }
+

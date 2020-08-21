@@ -1,0 +1,341 @@
+
+
+.content{
+    width: 100vw;
+    height: calc(100% - 75px);
+    display: flex;
+}
+/* .aside-left-content{
+    width: 200px;
+    height: calc(100vh - 75px);
+    background-color:#4EAD84;
+} */
+.todo-list{
+    width: calc(100% - 350px);
+    height: calc(100% - 150px);
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    overflow-y: auto;
+    
+}
+.overdue{
+    margin-top: 10px;
+    border-bottom: 1px solid;
+}
+ul{
+    margin-top: 10px;
+    list-style-type: none;
+}
+.due-content{
+    border-bottom: 1px solid;
+    max-height: 200px;
+    margin-bottom: 10px;
+}
+.due-item{
+    display: flex;
+    margin-left: 40px;
+    font-weight: bolder;
+}
+.due-item:hover{
+    color: orange;
+    cursor: pointer;
+}
+.date{
+    margin-left: 40px;
+    font-size: 12px;
+    color: red;
+}
+.btn-primary{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid;
+    outline: none;
+}
+.add-due{
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+}
+.add-due:hover{
+    color: red;
+}
+.menu-bar{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    align-items: center;
+}
+.main-page{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    align-items: center;
+}
+.search-box{
+    width: 250px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+    border: 1px solid transparent;
+    padding: 5px;
+    background-color: hsla(0,0%,100%,.2);
+}
+.search-content{
+    border:none ;
+    background-color: hsla(0,0%,100%,.2);
+    outline: none;
+}
+.today{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: calc(100% - 60px);
+    height: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.today:hover{
+    background-color: white;
+}
+.today >h1{
+    margin-left: 5px;
+}
+#task{
+    width: calc(100% - 10px);
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid gray;
+}
+.add{
+    width: 75px;
+    height: 30px;
+    background-color: green;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+.cancel{
+    width: 75px;
+    height: 30px;
+    background-color: red;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    color: white;
+    font-weight: bold;
+}
+.add-task-block{
+    /* chỉnh lại display */
+    display: none;
+    width: 500px;
+}
+.add:disabled{
+    background-color: #5F5F5F;
+}
+label{
+    margin-left: 20px;
+    }
+    #datepicker{
+    width:180px; 
+    margin: 0 20px 20px 20px;
+    }
+    #datepicker > span:hover{
+    cursor: pointer;
+    }
+.add-block{
+    display: flex;
+}
+.back{
+    display: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.back:hover{
+    color: red;
+}
+.back-list{
+    cursor: pointer;
+    margin-right: 20px;
+}
+.back-list:hover{
+    color: red;
+}
+
+.view-question{
+    margin-left: 40px;
+    font-size: 15px;
+    padding: 2px;
+    cursor: pointer;
+}
+.view-question:hover{
+    color: orange;
+}
+.answer-A{
+    font-weight: bolder;
+}
+.due01{
+    margin-bottom: 3px;
+}
+.formAdd-error{
+    color: red;
+    font-size: 15px;
+    /* margin-left: 5px; */
+}
+#close{
+    margin-top: 10px;
+    margin-left: 0;
+}
+.add-ques-block{
+    width: 500px;
+    display: none;
+}
+.radio-answerkey{
+    max-height: 200px;
+}
+#cancel{
+    margin-left: 0;
+    margin-top: 10px;
+}
+.trans-choice{
+    display: flex;
+    opacity: 0;
+    /* transition: width 1s; */
+}
+/* .trans-choice:hover{
+    width: 300px;
+} */
+.modal{
+    width: 100vw;
+    height:100vh ;
+    background-color:black;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute; top: 0 ;left: 0;
+    opacity: 0.4;
+    background-size: 100% 100%;
+    overflow-y: hidden;
+    position:fixed  ;
+}
+.modal-block{
+    width: 100vw;
+    height:100vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; top: 0 ;left: 0;
+    background-attachment: fixed;
+    display: none;
+    position:fixed  ;
+
+}
+.modal-content{
+    padding: 10px;
+    width: 500px;
+    height: 500px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    /* position: absolute; top: 0 ;left: 0; */
+}
+.modal-title{
+    width: 100%;
+    height: 50px;
+    color: red;
+    font-weight: bolder;
+}
+.question-content{
+    width: 100%;
+    height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.modal-foot{
+    width: 100%;
+    height: 50px;
+    text-align: right;
+}
+.question-choose{
+    width: calc(100% - 10px);
+    height: 50px;
+    border: 1px solid #F7F7F7;
+    margin-bottom: 10px;
+    padding: 5px;
+  
+}
+.question-choose:hover{
+    cursor: pointer;
+    background-color: #26B899;
+}
+.add-ques-choose{
+    width: 75px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(253, 216, 53);
+    border-radius: 2px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.cancel-modal{
+    width: 75px;
+    height: 30px;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    background-color: #F44336;
+    color: white;
+    border-radius: 2px;
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+.unchecked{
+    display: none;
+}
+
+.delete-content{
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+.delete-title{
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+}
+#btn-edit{
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #28A745;
+    border-radius: 5px;
+}
+#btn-cancel-edit{
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: red;
+    border-radius: 5px;
+}

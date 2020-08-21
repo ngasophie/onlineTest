@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f69268e783.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/signIn.css">
+    <link rel="stylesheet" href="./css/signUp.css">
+    <link rel="stylesheet" href="./css/mainPage.css">
+    <link rel="stylesheet" href="./css/test.css">
+    <link rel="stylesheet" href="./testTmp.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDB4M9RMLsOIccYSx8sd2ZjlfBANIXoxm8",
+            authDomain: "cimx-e5e5b.firebaseapp.com",
+            databaseURL: "https://cimx-e5e5b.firebaseio.com",
+            projectId: "cimx-e5e5b",
+            storageBucket: "cimx-e5e5b.appspot.com",
+            messagingSenderId: "852573027381",
+            appId: "1:852573027381:web:a6d7a2d6954e33bfa5857c",
+            measurementId: "G-TNVGC9JMFS"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        // firebase.analytics();
+    </script>
+</head>
+
+<body>
+    <section>
+        <div class="test">
+            <div class="menu">
+                <div class="aside-left">
+                    <div class="logo">
+                        <img class="logo"
+                            src="./images/168-1683771_transparent-quiz-clipart-images-quiz-night-hd-png.png" alt="img"
+                            style="width:50px;height:50px">
+                    </div>
+                    <div class="list-review">Exam Library</div>
+                </div>
+                <div class="aside-right">
+                    <div class="contact">
+                        <i class="fas fa-phone-volume fa-2x" style="margin-right: 5px;"></i>
+                        Contact us
+                    </div>
+                    <div class="search-test">
+                        <form id="search">
+                            <i class="fas fa-search fa-1x"></i>
+                            <input type="text" class="btn-search" placeholder="Search">
+                    </div>
+                    </form>
+
+                    <div class="account">
+                        <div class="avt">
+                            <img src="./images/avt-girl.jpg" alt="img" style="width:50px; height:50px" class="avt-img">
+                        </div>
+                        <div class="user-name">Nga Trịnh</div>
+                    </div>
+                </div>
+            </div>
+            <div class="test-name">Test Online 01</div>
+            <div class="test-container">
+
+                <div class="ques-container">
+                    <div class="numOfContent">Question </div>
+                    
+                    <div class="ques-content">
+        
+                        <div id="ques-content">
+                            <div class="question-block">
+                                <span class="question">Được dịch từ tiếng Anh-Trong xuất bản và thiết kế đồ họa, 
+                                    Được dịch từ tiếng Anh-Trong xuất bản và thiết kế đồ họa, Lorem ipsum là một văn bản giữ chỗ thường được sử dụng để</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="answer-block">
+
+                        <div class="answer-content">
+                            <div class="answer01">
+                                <div class="A">A</div>
+                                <div class="A-content">
+                                    <span>A</span>
+                                </div>
+                            </div>
+                            <div class="answer01">
+                                <div class="A B">B</div>
+                                <div class="A-content">
+                                    <span>B</span>
+                                </div>
+                            </div>
+                            <div class="answer01">
+                                <div class="A">C</div>
+                                <div class="A-content">
+                                    <span>Được dịch từ tiếng Anh-Trong xuất bản và thiết kế đồ họa, Lorem ipsum là một văn bản giữ chỗ thường được sử dụng để </span>
+                                </div>
+                            </div>
+                            <div class="answer01">
+                                <div class="A">D</div>
+                                <div class="A-content">
+                                    <span>D</span>
+                                </div>
+                            </div>
+                        </div>
+          
+                    </div>
+                </div>
+                <div>
+                    <button id="preQuestion">Back</button>
+                </div>
+                <div>
+                    <button id="nextQuestion">Next</button>
+                </div>
+                <div class="extra">
+                   
+                    <div class="timer">
+                        <div id="app"></div>
+
+                    </div>
+                    <div class="list-answer"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <div class="modal">
+        </div>
+        <section>
+            <div class="modal-block">
+                <div class="delete-content">
+                    <div class="delete-title">Are you sure you want to remove this test?</div>
+                    <div class="modal-foot">
+                        <div class="modal-btn">
+                            <button class="btn-primary add-ques-choose del-test">Yes</button>
+                            <button class="btn-primary cancel-modal cancel-modal-del">No</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="./js/countdownTimer.js"></script>
+    <script src="./js/loadTest.js"></script>
+    <script>
+        countdown.onload();
+    </script>
+</body>
+
+</html>
